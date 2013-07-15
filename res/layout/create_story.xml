@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/story_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg_with_logo" >
+
+        <Button
+            android:id="@+id/cancel_story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cancel" />
+         <Button
+            android:id="@+id/preview_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/preview" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logo_newstory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_story" >
+    </RelativeLayout>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="30"
+    android:orientation="vertical">
+         
+    <RelativeLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/story_bg"
+        android:gravity="center"
+        android:layout_weight="9"
+        android:id="@+id/createstory_first"
+        
+        >
+        <LinearLayout
+        android:id="@+id/newstory_relate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/text_field"
+            android:hint="Title"
+            android:padding="5dp"
+           
+            android:singleLine="true"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/sub_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+           
+             android:padding="5dp"
+            android:background="@drawable/text_field"
+            android:hint="Subtitle"
+             android:layout_marginBottom="10dp"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/collection_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/text_field_icon"
+            android:hint="Collections"
+            android:singleLine="true" />
+       
+    </LinearLayout>
+    </RelativeLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       	android:layout_below="@+id/createstory_first"
+       	android:id="@+id/createstory_second"
+         android:background="@drawable/story_text"
+         android:layout_above="@+id/four_bottom_buttons">
+        <ListView android:id="@+id/set_view_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/four_bottom_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+      
+      android:layout_alignParentBottom="true"
+        android:weightSum="8"
+        android:gravity="bottom">
+        <Button android:id="@+id/camera_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/camera"
+            android:layout_weight="2"/>
+        
+        <Button android:id="@+id/library_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/library"
+            android:layout_weight="2"/>
+        
+        <Button android:id="@+id/location_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/location"
+            android:layout_weight="2"/>
+        
+        <Button android:id="@+id/text_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

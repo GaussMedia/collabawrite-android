@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:weightSum="60" >
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="25"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_getstarted__first"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/img_popup"
+        android:gravity="center"
+         android:layout_weight="14"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/top_textview_first_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="What&apos;s happening in the world?"
+            android:textColor="#000000"
+            android:textStyle="bold" 
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/image_first_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/top_textview_first_popup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/file_pic" />
+
+        <TextView
+            android:id="@+id/last_textview_first_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_first_popup"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Reportedly allows you to report and discuss what&apos;s happening inth world around you."
+            android:textColor="#808080"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/continue_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/continue_btn" />
+    </RelativeLayout>
+<RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="21"></RelativeLayout>
+</LinearLayout>

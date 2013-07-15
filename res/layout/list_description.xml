@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/list_description_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg_with_logo" >
+
+        <Button
+            android:id="@+id/cancel_list_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cancel" />
+    </RelativeLayout>
+<RelativeLayout android:id="@+id/list_description_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:padding="10dp">
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/img_popup"
+        android:padding="5dp">
+        <ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            <RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+               
+               <TextView android:id="@+id/top_list_text"
+                   android:layout_height="wrap_content"
+                   android:layout_width="fill_parent"
+                   android:text="Title Report Here"
+                   android:textColor="#000000"
+                   android:textSize="24dp"
+                   
+                   />
+               <RelativeLayout 
+                   android:id="@+id/top_circle_layout"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                  
+                   android:layout_marginTop="10dp"
+                    android:layout_below="@+id/top_list_text">
+               <ImageView android:id="@+id/circle_view"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/circle_view"/>
+               
+               <TextView android:id="@+id/name_by"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="By: "
+                   android:textColor="#000000"
+                   android:layout_toRightOf="@+id/circle_view"
+                   android:layout_marginLeft="5dp"
+                   android:textSize="14dp"
+                   
+                   android:layout_below="@+id/top_list_text"/>
+               <TextView android:id="@+id/name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="Stan"
+                   android:textColor="#1194A9"
+                   android:textSize="12dp"
+                   android:layout_toRightOf="@+id/name_by"
+                   android:layout_below="@+id/top_list_text"/>
+               </RelativeLayout>
+               <ImageView android:id="@+id/separator_image"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:background="@drawable/seperator_img"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/top_circle_layout"/>
+               <ImageView android:id="@+id/task_image_list_description"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/separator_image"
+    android:background="@drawable/img"/>
+               <TextView android:id="@+id/below_image_text"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:text="@string/second_paragraph"
+                   android:textColor="#000000"
+                   android:textSize="12dp"
+                   android:gravity="center_vertical"
+                   android:layout_below="@+id/task_image_list_description"
+                   />
+               <ImageView android:id="@+id/task_image_second_list_description"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/below_image_text"
+    android:background="@drawable/img"/>
+               
+               <TextView android:id="@+id/below_image_second_text"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:gravity="center_vertical"
+                   android:text="@string/third_paragraph"
+                   android:textColor="#000000"
+                   android:textSize="12dp"
+                   android:layout_below="@+id/task_image_second_list_description"
+                  />
+            
+               <Button android:id="@+id/most_story_btn"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Most Stories By: Stan"
+                   android:textColor="#ffffff"
+                   android:textSize="15dp"
+                   android:padding="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_below="@+id/below_image_second_text"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginTop="10dp"
+                   android:background="#0000ff"/>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

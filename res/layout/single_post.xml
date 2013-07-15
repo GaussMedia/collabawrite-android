@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/main_bg"
+    >
+  
+         <RelativeLayout 
+             android:id="@+id/single_topview"
+             android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               android:padding="10dp" >
+               
+               <TextView android:id="@+id/top_single_text"
+                   android:layout_height="wrap_content"
+                   android:layout_width="fill_parent"
+                   android:text="Title Report Here"
+                   android:textColor="#000000"
+                   android:textSize="24dp"
+                   
+                   
+                   />
+               </RelativeLayout>
+               <RelativeLayout 
+                   android:id="@+id/top_circle_layout"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                  
+                   android:padding="5dp"
+                    android:layout_below="@+id/top_list_text">
+               <ImageView android:id="@+id/single_circle_view"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/circle_view"/>
+               
+               <TextView android:id="@+id/single_name_by"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="By: "
+                   android:textColor="#000000"
+                   android:layout_toRightOf="@+id/single_circle_view"
+                   android:layout_marginLeft="5dp"
+                   android:textSize="14dp"
+                   
+                   android:layout_below="@+id/top_list_text"/>
+               <TextView android:id="@+id/name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Whom"
+                   android:textColor="#1194A9"
+                   android:textSize="12dp"
+                   android:layout_toRightOf="@+id/single_name_by"
+                   android:layout_below="@+id/top_list_text"/>
+               </RelativeLayout>
+               <ImageView android:id="@+id/separator_image"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/seperator_img"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/top_circle_layout"/>
+               
+       <RelativeLayout android:layout_width="fill_parent"
+           android:layout_height="fill_parent">
+           <WebView android:id="@+id/post_web"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            />
+       </RelativeLayout> 
+        
+        
+  
+
+</LinearLayout>

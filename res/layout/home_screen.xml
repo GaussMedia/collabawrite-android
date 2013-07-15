@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/line" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/home_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg_with_logo" >
+
+        <Button
+            android:id="@+id/slide_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/option_bar" />
+
+        <Button
+            android:id="@+id/create_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/note" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top_three_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recent_bar"
+        android:orientation="horizontal"
+        android:weightSum="30" 
+        android:gravity="center_vertical">
+        
+
+        <TextView
+            android:id="@+id/recent_reports"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:text="Recent Reports"
+            android:textColor="#808080"
+            android:textSize="11dp" 
+            android:gravity="center"
+            
+            android:layout_weight="10"/>
+
+        <TextView
+            android:id="@+id/collections"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Collections"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:textColor="#808080"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/most_recommended"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:text="Most Recommended"
+            android:textColor="#808080"
+            android:textSize="10dp" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/small_triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@drawable/main_bg"
+        android:weightSum="30"
+        android:visibility="gone"
+        android:orientation="horizontal"
+         >
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_weight="10" >
+        <ImageView android:id="@+id/first_triangle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_weight="10" >
+        <ImageView android:id="@+id/second_triangle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_weight="10" >
+        <ImageView android:id="@+id/third_triangle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+  
+   
+    
+
+    <RelativeLayout
+        android:id="@+id/home_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/main_bg"
+        android:paddingLeft="10dp" 
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        >
+          <EditText android:id="@+id/searchbox_value"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search"
+    android:visibility="gone"
+    android:hint="Search"
+    android:paddingLeft="30dp"
+    
+   />
+
+        <ListView
+            android:id="@+id/home_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" 
+            android:layout_below="@+id/searchbox_value"
+            android:fadingEdge="none">
+        </ListView>
+        
+    </RelativeLayout>
+
+</LinearLayout>

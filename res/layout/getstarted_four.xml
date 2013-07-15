@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:weightSum="60" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="25" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_getstarted__fifth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="14"
+        android:background="@drawable/img_popup"
+        android:gravity="center"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/top_textview_fifth_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Share and collaborate with anyone."
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/image_fifth_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/continue_fourth"
+            android:layout_below="@+id/top_textview_fifth_popup"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/map_image" />
+
+        <Button
+            android:id="@+id/continue_fourth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/continue_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="21" >
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:id="@+id/profile_settings_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg_with_logo" >
+
+        <Button
+            android:id="@+id/profile_settings_cancel_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cancel" />
+
+        <Button
+            android:id="@+id/profile_settings_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/save_btn" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/edit_logo_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_text" >
+    </RelativeLayout>
+     
+     
+    <LinearLayout android:id="@+id/profile_settings_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/main_bg"
+        android:padding="20dp"
+        
+        >
+        <Button 
+            android:id="@+id/change_profile_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Change Profile Picture"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/first_textfeild"/>
+        <Button 
+            android:id="@+id/edit_your_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit Your Profile"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/second_textfeild"/>
+         
+        <Button 
+            android:id="@+id/recommended_story_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recommended Stories"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/last_textfeild"/>
+        <Button 
+            android:id="@+id/logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/logout_btn"/>
+        
+        
+        </LinearLayout>
+</LinearLayout>

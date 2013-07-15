@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/select_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg_with_logo" >
+
+        <Button
+            android:id="@+id/select_slide_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/option_bar" />
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/create_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_your_collection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recent_bar"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your collection"
+            android:textColor="#808080"
+            android:textStyle="bold" />
+    </RelativeLayout>
+  <RelativeLayout
+        android:id="@+id/select_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/main_bg"
+        android:paddingLeft="5dp" 
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        >
+          <EditText android:id="@+id/searchbox_value"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search"
+    android:hint="Search"
+    android:layout_marginTop="5dp"
+    android:paddingLeft="30dp"
+    
+   />
+
+        <ListView
+            android:id="@+id/select_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" 
+            android:layout_below="@+id/searchbox_value"
+            android:fadingEdge="none">
+        </ListView>
+        
+    </RelativeLayout>
+
+</LinearLayout>

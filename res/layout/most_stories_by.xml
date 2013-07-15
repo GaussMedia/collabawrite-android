@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <RelativeLayout
+        android:id="@+id/most_stories_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg_with_logo" >
+
+        <Button
+            android:id="@+id/cancel_most_stories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cancel" />
+    </RelativeLayout>
+    
+ <RelativeLayout android:id="@+id/most_stories_bg"
+     android:layout_height="fill_parent"
+     android:layout_width="fill_parent"
+     android:background="@drawable/main_bg"
+     android:padding="10dp">
+     
+     <RelativeLayout android:id="@+id/edit_layout_most_stories"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+          android:background="@drawable/img_bg"
+    android:padding="5dp">
+    
+    <LinearLayout 
+        android:id="@+id/main_edit_layout_most_stories"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+       
+        android:paddingTop="5dp"
+        android:weightSum="20">
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/user_pic"
+            android:layout_weight="15"
+            >
+        <ImageView android:id="@+id/my_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_launcher"
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            >
+        <LinearLayout 
+            android:id="@+id/two_btn_layout_most_stories"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:weightSum="20">
+            <RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:background="@drawable/first_box"
+                android:padding="10dp"
+                >
+                <TextView android:id="@+id/report_posted_counter_most_stories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"/>
+                     <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Report Posted"
+                   android:gravity="center"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/report_posted_counter_most_stories"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            
+            <RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:background="@drawable/second_box"
+                android:padding="10dp"
+                >
+                 <TextView android:id="@+id/recommendation_counter_most_stories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"/>
+                     <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Report Posted"
+                   android:gravity="center"
+                   android:textSize="10dp"
+                    android:layout_below="@+id/recommendation_counter_most_stories"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView android:id="@+id/edit_task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Train Windows"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/main_edit_layout_most_stories"/>
+    
+    <TextView android:id="@+id/edit_motto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Shooting Street potrait"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/edit_task_name"/>
+    
+    <TextView android:id="@+id/edit_my_site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="https://www.google.com"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/edit_motto"/>
+</RelativeLayout>
+<ListView android:id="@+id/edit_profile_list_most"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_below="@+id/edit_layout_most_stories"
+           android:fadingEdge="none"
+           android:layout_marginTop="10dp"
+           ></ListView>
+ </RelativeLayout>
+</LinearLayout>

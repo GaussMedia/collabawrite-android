@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+     <RelativeLayout android:id="@+id/home_layout"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+          android:background="@drawable/img_bg"
+    android:padding="5dp">
+<ImageView android:id="@+id/task_image"
+    android:layout_width="fill_parent"
+    android:layout_height="130dp"
+  android:scaleType="fitXY"
+    />
+<TextView android:id="@+id/task_name"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="Train windows"
+    android:layout_alignParentLeft="true"
+    android:textStyle="bold"
+    android:layout_below="@+id/task_image"
+    />
+<TextView android:id="@+id/myname"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="Sumit"
+    android:textColor="#808080"
+    android:textSize="10dp"
+    android:layout_below="@+id/task_name"
+    android:layout_marginBottom="2dp"
+    />
+<LinearLayout android:id="@+id/three_btns"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/task_image"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:weightSum="30">
+    <ImageView android:id="@+id/facebook_img"
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:background="@drawable/fb"
+        android:layout_weight="10"
+        android:layout_marginRight="7dp"/>
+    
+     <ImageView android:id="@+id/twitter_img"
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:background="@drawable/twitter"
+        android:layout_weight="10"
+        android:layout_marginRight="7dp"/>
+      <ImageView android:id="@+id/recommend_it"
+       android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:background="@drawable/recommed"
+        android:layout_weight="10"/>
+     
+</LinearLayout>
+</RelativeLayout>
+ <ImageView android:id="@+id/blank"
+          android:layout_width="fill_parent"
+          android:layout_height="10dp"
+          android:background="@drawable/main_bg"
+          android:layout_below="@+id/home_layout"/>
+
+</RelativeLayout>

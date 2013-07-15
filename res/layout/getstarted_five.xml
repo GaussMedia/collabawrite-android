@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    
+    android:weightSum="60"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp" >
+<RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="25"></RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_getstarted__fourth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="14"
+        android:background="@drawable/img_popup"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/top_textview_fourth_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="To Contribute, you&apos;ll need to sign in."
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+
+       <RelativeLayout android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/fourth_layout"
+            android:layout_below="@+id/top_textview_fourth_popup"
+              android:layout_marginTop="7dp"
+              android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/image_fourth_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/prof_ico" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/last_textview_fourth_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fourth_layout"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Get Alerted.Sign up for alerts and we will inform you when things that are important to you are happening where are you."
+            android:textColor="#808080"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/continue_fifth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/browse_layout"
+            android:background="@drawable/sign_register"
+            android:layout_marginBottom="12dp" />
+
+        <RelativeLayout
+            android:id="@+id/browse_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/just_browse"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:background="@drawable/just_want"
+                android:textColor="#808080" />
+        </RelativeLayout>
+    </RelativeLayout>
+     <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="21"></RelativeLayout>
+
+</LinearLayout>

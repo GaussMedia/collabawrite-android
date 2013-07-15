@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/preview_screen_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg_with_logo" >
+
+        <Button
+            android:id="@+id/preview_screen_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cancel" />
+
+        
+    </RelativeLayout>
+      <RelativeLayout
+        android:id="@+id/logo_create_collection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg" 
+        
+        >
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Preview"
+            android:textColor="#4E4E4E"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            />
+</RelativeLayout>
+   <LinearLayout
+        android:id="@+id/preview_screen_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/main_bg"
+        android:orientation="vertical"
+        android:padding="10dp"
+       >
+    <TextView 
+        android:id="@+id/preview_title"
+        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Title Bar"
+            android:textSize="25dp"
+            android:textStyle="bold"
+           android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/preview_subtitle" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Description Bar"
+            android:layout_marginTop="5dp"
+          
+            />
+       <RelativeLayout android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp">
+    <ImageView 
+        android:id="@+id/circle_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_view"/>
+    <TextView 
+         android:id="@+id/by"
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By:"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" 
+            android:layout_toRightOf="@id/circle_image" 
+            android:layout_marginTop="10dp"        
+            />
+        <TextView
+            android:id="@+id/preview_description" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stan Gauss"
+            android:layout_marginTop="10dp"  
+              android:layout_toRightOf="@id/by" 
+          
+            />
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/preview_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fadingEdge="none">
+       
+    </ListView>
+   </LinearLayout>
+   </LinearLayout>

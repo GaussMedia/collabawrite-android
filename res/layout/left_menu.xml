@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative_left_menu" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="match_parent"
+    android:background="#000000"
+   
+     >
+    
+    <Button android:id="@+id/invisible_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blang_image_tran"
+        
+       />
+    
+    <Button android:id="@+id/homeview_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invisible_btn"
+        android:background="@drawable/home_button"/>
+    
+   
+   
+    
+    
+    <Button android:id="@+id/create_location_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeview_btn"
+        android:background="@drawable/create_location_button"/>
+     
+     <Button android:id="@+id/profile_screen_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_location_btn"
+        android:background="@drawable/profile_screen_button"/>
+    
+     <Button android:id="@+id/states_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_screen_btn"
+        android:background="@drawable/stats_screen_button"/>
+     <Button android:id="@+id/map_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/states_btn"
+        android:background="@drawable/map_screen_button"/>
+     
+     <Button android:id="@+id/profile_settings_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/setting_screen_button"/>
+     
+
+
+</RelativeLayout>
