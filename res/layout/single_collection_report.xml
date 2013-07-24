@@ -17,6 +17,14 @@
             android:layout_centerInParent="true"
             android:layout_marginLeft="10dp"
             android:background="@drawable/cancel" />
+           <Button
+            android:id="@+id/collection_report_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_btn" />
 
     </RelativeLayout>
     <RelativeLayout
@@ -26,7 +34,9 @@
         android:background="@drawable/bg" 
         
         >
-        <TextView android:layout_width="fill_parent"
+        <TextView 
+            android:id="@+id/collection_name"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Collection Reports"
             android:textColor="#4E4E4E"

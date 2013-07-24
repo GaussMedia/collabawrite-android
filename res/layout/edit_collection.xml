@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+    <RelativeLayout
+        android:id="@+id/edit_collection_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg_with_logo" >
+
+        <Button
+            android:id="@+id/edit_collection_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/delete_collection" />
+
+        <Button
+            android:id="@+id/edit_collection_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_btn" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/logo_create_collection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg" 
+        
+        >
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Collection"
+            android:textColor="#4E4E4E"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            />
+</RelativeLayout>
+
+  <LinearLayout
+        android:id="@+id/create_collection_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/main_bg"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:weightSum="10" >
+         <ScrollView 
+        android:id="@+id/collection_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout 
+            android:id="@+id/create_collection_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        
+      
+        <EditText
+         android:id="@+id/edit_collection_title"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:hint="Title"
+         android:background="@drawable/text_field"
+         android:singleLine="true"
+         android:padding="5dp"
+         android:textSize="15dp" />
+       <EditText
+            android:id="@+id/edit_collection_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/collection_textarea"
+            android:hint="Description"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:textSize="15dp" />
+       <Button
+            android:id="@+id/edit_collection_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical|left"
+            android:textStyle="bold"
+            android:background="@drawable/text_field_icon"
+            android:text="Attach image"
+          />
+       <RadioGroup android:id="@+id/edit_radio_grp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp">
+           
+       <RadioButton android:id="@+id/edit_radio_one"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textSize="14dp"
+           android:textColor="#4E4E4E"
+           android:textStyle="bold"
+           android:text="Anyone"/>
+       <RadioButton android:id="@+id/edit_radio_two"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="Invite Only"
+           android:textStyle="bold"
+           android:textColor="#4E4E4E"
+           android:textSize="14dp"/>
+       </RadioGroup>
+        <TextView
+           android:id="@+id/edit_collection_invite"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:text="Invite to"
+           android:padding="3dp"
+           android:visibility="gone"
+           android:textStyle="bold"
+           android:textColor="#4E4E4E"
+           android:textSize="14dp" />
+        <EditText
+                android:id="@+id/edit_collection_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_bottom_bx"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:text="Email Id"
+                android:textStyle="bold"
+                android:textSize="13dp" />
+        <RelativeLayout 
+            android:id="@+id/edit_collection_bottom_view"
+            android:layout_width="fill_parent"
+             android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+    
+        <TextView
+            android:id="@+id/add_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Add more"
+            android:textColor="#1194A9"
+            android:textSize="10dp" />
+  </RelativeLayout>
+          </LinearLayout>   
+          </ScrollView>
+          </LinearLayout>  
+          
+</LinearLayout>

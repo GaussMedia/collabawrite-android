@@ -129,9 +129,9 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@drawable/main_bg"
-        android:paddingLeft="10dp" 
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
+        android:paddingLeft="5dp" 
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
         >
           <EditText android:id="@+id/searchbox_value"
     android:layout_width="fill_parent"
@@ -139,6 +139,7 @@
     android:background="@drawable/search"
     android:visibility="gone"
     android:hint="Search"
+    android:singleLine="true"
     android:paddingLeft="30dp"
     
    />
